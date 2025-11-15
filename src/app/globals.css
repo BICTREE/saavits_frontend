@@ -1,9 +1,39 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("/assets/font/HelveticaNeue-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("/assets/font/HelveticaNeue-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("/assets/font/HelveticaNeue-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+  @font-face {
+    font-family: 'Berday Free';
+    font-style: normal;
+    font-weight: normal;
+    src: url("/assets/font/BerdayFree-0WX5v.woff") format("woff");
+    }
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
+
+
 
 @theme inline {
   --color-background: var(--background);
@@ -23,4 +53,11 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-helvetica {
+  font-family: "HelveticaNeue", sans-serif;
+}
+.font-berday{
+ font-family:'Berday Free';font-weight:normal;font-size:42px;
 }
