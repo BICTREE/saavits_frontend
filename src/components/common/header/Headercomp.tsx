@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <header className="w-full bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-        
+
         {/* Logo */}
         <div className="flex items-center">
           <Image
@@ -23,23 +23,14 @@ export default function Header() {
         </div>
 
         {/* Desktop Navigation */}
-<nav className="hidden md:flex">
-  <ul className="flex items-center space-x-8 text-sm font-medium font-helvetica uppercase text-[#003049]">
-    <li>
-      <Link href="/" className="hover:text-[#048b43] cursor-pointer">Home</Link>
-    </li>
-    <li>
-      <Link href="/aboutus" className="hover:text-[#048b43] cursor-pointer">About Us</Link>
-    </li>
-    <li>
-      <Link href="/product" className="hover:text-[#048b43] cursor-pointer">Products</Link>
-    </li>
-    <li>
-      <Link href="/contact" className="hover:text-[#048b43] cursor-pointer">Contact Us</Link>
-    </li>
-  </ul>
-</nav>
-
+        <nav className="hidden md:flex">
+          <ul className="flex items-center space-x-8 text-sm font-medium font-helvetica uppercase text-[#003049]">
+            <li><Link href="/" className="hover:text-[#048b43]">Home</Link></li>
+            <li><Link href="/aboutus" className="hover:text-[#048b43]">About Us</Link></li>
+            <li><Link href="/product" className="hover:text-[#048b43]">Products</Link></li>
+            <li><Link href="/contact" className="hover:text-[#048b43]">Contact Us</Link></li>
+          </ul>
+        </nav>
 
         {/* Mobile Hamburger Button */}
         <button
@@ -74,19 +65,31 @@ export default function Header() {
           </button>
         </div>
 
+        {/* MOBILE MENU LINKS */}
         <ul className="flex flex-col p-6 space-y-6 text-[#003049] font-medium text-lg font-helvetica">
           <li>
-      <Link href="/" className="hover:text-[#048b43] cursor-pointer">Home</Link>
-    </li>
-    <li>
-      <Link href="/aboutus" className="hover:text-[#048b43] cursor-pointer">About Us</Link>
-    </li>
-    <li>
-      <Link href="/product" className="hover:text-[#048b43] cursor-pointer">Products</Link>
-    </li>
-    <li>
-      <Link href="/contact" className="hover:text-[#048b43] cursor-pointer">Contact Us</Link>
-    </li>
+            <Link href="/" onClick={() => setOpen(false)} className="hover:text-[#048b43]">
+              Home
+            </Link>
+          </li>
+
+          <li>
+            <Link href="/aboutus" onClick={() => setOpen(false)} className="hover:text-[#048b43]">
+              About Us
+            </Link>
+          </li>
+
+          <li>
+            <Link href="/product" onClick={() => setOpen(false)} className="hover:text-[#048b43]">
+              Products
+            </Link>
+          </li>
+
+          <li>
+            <Link href="/contact" onClick={() => setOpen(false)} className="hover:text-[#048b43]">
+              Contact Us
+            </Link>
+          </li>
         </ul>
       </div>
     </header>
