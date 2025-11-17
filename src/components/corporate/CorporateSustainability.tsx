@@ -1,8 +1,8 @@
 export default function CorporateSustainability() {
   return (
-    <section className="w-full bg-white py-16 flex flex-col items-center px-6">
+    <section className="w-full bg-white py-16 flex flex-col items-center px-6 text-[#2B2B2B]">
       {/* Header */}
-      <h1 className="text-3xl md:text-4xl text-center font-helvetica">
+      <h1 className="text-3xl md:text-4xl text-center font-helvetica ">
         Corporate Sustainability
       </h1>
       <p className="text-center text-lg mt-4 max-w-3xl">
