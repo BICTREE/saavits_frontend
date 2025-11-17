@@ -54,7 +54,7 @@ imgClass: "w-full mx-auto",
 
 export default function ProductsShowcase() {
   return (
-    <section className="w-full bg-white py-16 px-6">
+    <section className="w-full bg-white py-16 px-6 text-[#2B2B2B]">
       <div className="max-w-6xl mx-auto space-y-24">
 
         {products.map((product, index) => (

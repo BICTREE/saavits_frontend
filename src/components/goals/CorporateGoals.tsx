@@ -1,6 +1,6 @@
 export default function CorporateGoals() {
   return (
-    <section className="w-full bg-[#FCE5B3] py-20 flex flex-col items-center px-6">
+    <section className="w-full bg-[#FCE5B3] py-20 flex flex-col items-center px-6 text-[#2B2B2B]">
       {/* Title */}
       <h2 className="text-2xl md:text-3xl font-helvetica text-center">
         Our Corporate Goals
