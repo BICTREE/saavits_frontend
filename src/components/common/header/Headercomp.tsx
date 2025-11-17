@@ -9,18 +9,20 @@ export default function Header() {
 
   return (
     <header className="w-full bg-white shadow-sm sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-2">
 
         {/* Logo */}
-        <div className="flex items-center">
-          <Image
-            src="/assets/images/logo1.png"
-            alt="Logo"
-            width={100}
-            height={100}
-            className="w-auto"
-          />
-        </div>
+    <div className="flex justify-center items-center">
+  <div className="relative w-40 h-40 md:w-[175px] md:h-[175px]">
+    <Image
+      src="/assets/images/logo2.png"
+      alt="Logo"
+      fill
+      className="object-contain"
+    />
+  </div>
+</div>
+
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex">
