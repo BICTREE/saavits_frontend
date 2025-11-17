@@ -61,3 +61,59 @@ body {
 .font-berday{
  font-family:'Berday Free';font-weight:normal;font-size:42px;
 }
+
+
+
+
+
+
+/***************popup*********/
+/* OPEN animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes popupZoom {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.animate-popupZoom {
+  animation: popupZoom 0.35s ease-out forwards;
+}
+
+/* CLOSE animations */
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes popupClose {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+}
+
+.animate-fadeOut {
+  animation: fadeOut 0.3s ease-in forwards;
+}
+
+.animate-popupClose {
+  animation: popupClose 0.3s ease-in forwards;
+}
