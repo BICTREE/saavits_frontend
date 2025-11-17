@@ -48,7 +48,7 @@ export default function AboutDescription() {
       </div>
 
       {/* BOTTOM PURPOSE STATEMENT */}
-      <div className="mx-auto text-center mt-12 px-6">
+      <div className="mx-auto text-center mt-12 px-6 text-[#2B2B2B]">
         <h3 className="font-semibold text-lg md:text-xl leading-relaxed text-center">
           Our purpose is to Enhance People’s Lives, and that starts at each Oyster Mushrooms farm
           with our vertically integrated affiliates and owned logistics fleet. 
