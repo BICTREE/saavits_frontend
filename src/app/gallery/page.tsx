@@ -95,7 +95,7 @@ export default function GalleryPage() {
           >
             {/* Close Button */}
             <button
-              className="absolute top-5 right-5 bg-white/20 text-white backdrop-blur-md rounded-full w-10 h-10 flex items-center justify-center text-3xl hover:bg-white/30"
+              className="absolute -top-8 right-8 bg-white/20 text-white backdrop-blur-md rounded-full w-10 h-10 flex items-center justify-center text-3xl hover:bg-white/30"
               onClick={closePopup}
             >
               ×
