@@ -13,7 +13,7 @@ export default function Header() {
 
         {/* Logo */}
     <div className="flex justify-center items-center">
-  <div className="relative w-40 h-40 md:w-[175px] md:h-[175px]">
+  <div className="relative w-40 h-40 md:w-[155px] md:h-[155px]">
     <Image
       src="/assets/images/logo2.png"
       alt="Logo"
@@ -30,6 +30,7 @@ export default function Header() {
             <li><Link href="/" className="hover:text-[#048b43]">Home</Link></li>
             <li><Link href="/aboutus" className="hover:text-[#048b43]">About Us</Link></li>
             <li><Link href="/product" className="hover:text-[#048b43]">Products</Link></li>
+                     <li><Link href="/gallery" className="hover:text-[#048b43]">Gallery</Link></li>
             <li><Link href="/contact" className="hover:text-[#048b43]">Contact Us</Link></li>
           </ul>
         </nav>
@@ -84,6 +85,12 @@ export default function Header() {
           <li>
             <Link href="/product" onClick={() => setOpen(false)} className="hover:text-[#048b43]">
               Products
+            </Link>
+          </li>
+
+           <li>
+            <Link href="/gallery" onClick={() => setOpen(false)} className="hover:text-[#048b43]">
+              Gallery
             </Link>
           </li>
 
