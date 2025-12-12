@@ -11,6 +11,7 @@ const Footer = () => {
         <ul className="flex flex-wrap justify-center gap-6 text-gray-300 text-lg leading-tight">
           <li className="hover:text-white cursor-pointer">Home</li>
           <li className="hover:text-white cursor-pointer">About Us</li>
+          <li className="hover:text-white cursor-pointer">Products</li>
           <li className="hover:text-white cursor-pointer">Gallery</li>
           <li className="hover:text-white cursor-pointer">Contact Us</li>
         </ul>
